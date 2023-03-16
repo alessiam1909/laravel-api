@@ -19,6 +19,8 @@ Route::get('/projects', [PostController::class, 'index']);
 
 Route::get('/projects/{slug}', [PostController::class, 'show']);
 
+Route::post('/contacts', []);
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
